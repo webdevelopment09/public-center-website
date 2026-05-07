@@ -2300,3 +2300,42 @@ body {
     z-index: 2;
   }
 }
+
+/* ABSOLUTE FINAL MOBILE BRANCH PHOTO FIX */
+
+@media (max-width: 768px) {
+  .branches-section .branch-card .branch-media-stack .branch-photo {
+    position: relative !important;
+    overflow: hidden !important;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-color: #111827 !important;
+    min-height: 0 !important;
+    height: 100% !important;
+  }
+
+  .branches-section .branch-card .branch-media-stack .branch-photo::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background-image: inherit !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    filter: blur(20px) brightness(0.55) !important;
+    transform: scale(1.18) !important;
+    z-index: 1 !important;
+  }
+
+  .branches-section .branch-card .branch-media-stack .branch-photo::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background-image: inherit !important;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    z-index: 2 !important;
+  }
+}
