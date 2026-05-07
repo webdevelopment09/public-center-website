@@ -2267,3 +2267,36 @@ body {
   }
 }
 
+/* MOBILE BRANCH PHOTO FIX */
+
+@media (max-width: 768px) {
+  .branch-media-stack .branch-photo {
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-color: #111827 !important;
+  }
+
+  .branch-media-stack .branch-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(18px) brightness(0.55);
+    transform: scale(1.14);
+    z-index: 1;
+  }
+
+  .branch-media-stack .branch-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+}
