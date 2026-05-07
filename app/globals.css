@@ -2339,3 +2339,31 @@ body {
     z-index: 2 !important;
   }
 }
+
+/* REAL FINAL PHONE BRANCH IMAGE FIX */
+
+@media screen and (max-width: 768px) {
+  .branches-section .branch-media-stack {
+    display: grid !important;
+    grid-template-rows: 320px 320px !important;
+    height: 640px !important;
+    min-height: 640px !important;
+  }
+
+  .branches-section .branch-photo {
+    height: 320px !important;
+    min-height: 320px !important;
+    max-height: 320px !important;
+
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-color: #111827 !important;
+  }
+
+  .branches-section .branch-map-placeholder {
+    height: 320px !important;
+    min-height: 320px !important;
+    max-height: 320px !important;
+  }
+}
