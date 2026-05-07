@@ -1498,10 +1498,6 @@ textarea {
   .branch-card {
     grid-template-columns: 1fr !important;
   }
-
-  .branch-media-stack {
-    min-height: 560px !important;
-  }
 }
 
 /* GEORGIAN TEXT FIX */
