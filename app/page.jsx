@@ -5,6 +5,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import StatsSection from "@/components/StatsSection";
+import SubscriptionsSection from "@/components/SubscriptionsSection";
 
 export default function HomePage() {
   return (
@@ -14,11 +15,7 @@ export default function HomePage() {
         <StatsSection />
         <ServicesGrid />
         <BranchesSection />
-
-        <section id="subscriptions" className="future-section">
-          <p>Subscriptions section coming next.</p>
-        </section>
-
+        <SubscriptionsSection />
         <ContactSection />
         <Footer />
       </main>
