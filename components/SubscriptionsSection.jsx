@@ -81,6 +81,7 @@ export default function SubscriptionsSection() {
                       <th>ვიზიტების რაოდენობა</th>
                       <th>დროები</th>
                       <th>ღირებულება</th>
+                      <th>მომსახურების პაკეტი</th>
                     </tr>
                   </thead>
 
@@ -91,6 +92,7 @@ export default function SubscriptionsSection() {
                         <td>{plan.visits}</td>
                         <td>{plan.duration}</td>
                         <td>{plan.price}</td>
+                        <td>{plan.package || "—"}</td>
                       </tr>
                     ))}
                   </tbody>
