@@ -1,7 +1,7 @@
 export const subscriptionGroups = [
   {
     id: "gymnastics",
-    serviceSlug: "tanvarjishi",
+    serviceSlug: "gymnastics",
     icon: "🤸",
     title: "ტანვარჯიში",
     subtitle: "ტანვარჯიშის დარბაზი",
@@ -12,6 +12,12 @@ export const subscriptionGroups = [
     plans: [
       {
         name: "მხატვრული ტანვარჯიში",
+        visits: "12 ვიზიტი",
+        duration: "ჯგუფური ვარჯიში\n1 საათი",
+        price: "120 ლარი",
+      },
+      {
+        name: "სპორტული ტანვარჯიში",
         visits: "12 ვიზიტი",
         duration: "ჯგუფური ვარჯიში\n1 საათი",
         price: "120 ლარი",
