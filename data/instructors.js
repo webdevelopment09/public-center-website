@@ -17,9 +17,9 @@ export const instructors = [
     "წონის კონტროლი",
     "სწორი ტექნიკა",
   ],
-},
+ },
 
-{
+ {
   serviceSlug: "gym",
   branches: ["varketili"],
 
@@ -37,9 +37,9 @@ export const instructors = [
     "ფუნქციური ვარჯიში",
     "სწორი ტექნიკა",
   ],
-},
+ },
 
-{
+ {
   serviceSlug: "gym",
   branches: ["varketili"],
 
@@ -57,9 +57,9 @@ export const instructors = [
     "კუნთოვანი მასის განვითარება",
     "სწორი ტექნიკა",
   ],
-},
+ },
 
-{
+ {
   serviceSlug: "gym",
   branches: ["varketili"],
 
@@ -77,7 +77,7 @@ export const instructors = [
     "კარდიო ვარჯიში",
     "სწორი ტექნიკა",
   ],
-},
+ },
 
   {
     serviceSlug: "fitness",
