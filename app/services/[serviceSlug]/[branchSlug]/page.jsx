@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { branches, services } from "@/data/services";
 import PageTransition from "@/components/PageTransition";
+import ServiceSubscriptionsPreview from "@/components/ServiceSubscriptionsPreview";
 
 export function generateStaticParams() {
   const params = [];
@@ -63,6 +64,8 @@ export default async function ServiceBranchPage({ params }) {
           </a>
         </div>
 
+         <ServiceSubscriptionsPreview serviceSlug={service.slug} />
+         
         <div className="gallery">
   {(service.galleryImages?.[branch.slug] || []).map((image, index) => (
     <a
