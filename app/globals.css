@@ -2749,3 +2749,145 @@ body {
     flex-direction: column;
   }
 }
+
+/* SERVICE INSTRUCTORS SECTION */
+
+.service-instructors-section {
+  margin: 80px 0;
+}
+
+.service-instructors-heading {
+  max-width: 780px;
+  margin-bottom: 36px;
+}
+
+.service-instructors-heading p {
+  color: #d62828;
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.service-instructors-heading h2 {
+  font-size: clamp(34px, 5vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.service-instructors-heading span {
+  display: block;
+  color: #4b5563;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.service-instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.instructor-card {
+  overflow: hidden;
+  border-radius: 34px;
+  background: white;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 28px 80px rgba(17, 24, 39, 0.1);
+  transition: 0.35s ease;
+}
+
+.instructor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 38px 100px rgba(17, 24, 39, 0.16);
+}
+
+.instructor-photo {
+  min-height: 360px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e5e7eb;
+  position: relative;
+}
+
+.instructor-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.18)),
+    radial-gradient(circle at top left, rgba(255, 209, 102, 0.14), transparent 38%);
+}
+
+.instructor-info {
+  padding: 28px;
+}
+
+.instructor-info span {
+  display: inline-block;
+  color: #005caf;
+  font-size: 13px;
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.instructor-info h3 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.instructor-experience {
+  color: #d62828 !important;
+  font-weight: 900;
+  margin-bottom: 12px !important;
+}
+
+.instructor-info p {
+  color: #4b5563;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.instructor-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.instructor-specialties small {
+  padding: 8px 11px;
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #111827;
+  font-weight: 800;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+@media (max-width: 1050px) {
+  .service-instructors-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .service-instructors-section {
+    margin: 56px 0;
+  }
+
+  .service-instructors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instructor-photo {
+    min-height: 310px;
+  }
+
+  .instructor-info {
+    padding: 24px;
+  }
+}
