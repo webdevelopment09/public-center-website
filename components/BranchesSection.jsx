@@ -1,15 +1,16 @@
-import Reveal from "./Reveal";
 import { branches } from "@/data/services";
+import Reveal from "./Reveal";
 
 export default function BranchesSection() {
   return (
     <section id="branches" className="branches-section">
       <Reveal className="branches-heading">
-        <p>ფილიალები </p>
-        <h2>სამი ლოკაცია თბილისის მასშტაბით</h2>
+        <p>ფილიალები</p>
+        <h2>სამი ფილიალი თბილისში</h2>
         <span>
-          თითოეული ფილიალი შექმნილია იმისთვის, რომ სტუმრებს შესთავაზოს კომფორტული,
-          თანამედროვე და სანდო გარემო სპორტისთვისა და ყოველდღიური აქტივობებისთვის.
+          თითოეული ფილიალი შექმნილია კომფორტული, თანამედროვე და სანდო
+          გარემოსთვის, სადაც მომხმარებლებს შეუძლიათ სპორტი, ვარჯიში და აქტიური
+          ცხოვრების წესის განვითარება.
         </span>
       </Reveal>
 
@@ -18,10 +19,20 @@ export default function BranchesSection() {
           <Reveal key={branch.slug} delay={index * 0.12} y={60}>
             <article className="branch-card">
               <div className="branch-media-stack">
-                <div
-                  className="branch-photo"
-                  style={{ backgroundImage: `url(${branch.image})` }}
-                />
+                <div className="branch-photo">
+                  <img
+                    src={branch.image}
+                    alt={`${branch.name} ფოტო`}
+                    className="branch-photo-bg"
+                    aria-hidden="true"
+                  />
+
+                  <img
+                    src={branch.image}
+                    alt={`${branch.name} ფოტო`}
+                    className="branch-photo-main"
+                  />
+                </div>
 
                 <div className="branch-map-placeholder">
                   <iframe
@@ -46,13 +57,13 @@ export default function BranchesSection() {
 
                 <div className="branch-details">
                   <div>
-                    <strong>ლოკაცია</strong>
+                    <strong>მისამართი</strong>
                     <span>{branch.location}</span>
                   </div>
 
                   <div>
                     <strong>სამუშაო დრო</strong>
-                    <span>ორშ - კვი: 08:00 - 23:00</span>
+                    <span>{branch.hours}</span>
                   </div>
 
                   <div>
@@ -62,7 +73,7 @@ export default function BranchesSection() {
                 </div>
 
                 <a href={`tel:${branch.phone}`} className="branch-call-btn">
-                  ფილიალთან დაკავშირება
+                  დარეკვა
                 </a>
               </div>
             </article>
