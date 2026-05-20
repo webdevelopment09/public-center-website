@@ -25,7 +25,10 @@ export default function ServiceGroupsSection({ serviceSlug, branchSlug }) {
         {groups.map((group) => (
           <article className="service-group-card" key={group.title}>
             <div className="service-group-content">
-              <span className="service-group-label">{group.serviceName}</span>
+              <span className="service-group-label">
+            {group.serviceName}
+            {group.age ? ` • ${group.age}` : ""}
+            </span>
 
               <h3>{group.title}</h3>
 
