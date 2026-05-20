@@ -201,7 +201,7 @@ export const instructors = [
 
 {
   serviceSlug: "basketball",
-  branches: ["mtatsminda"],
+  branches: ["mtawminda"],
 
   name: "ნიკა გურგენიძე",
   role: "კალათბურთის მწვრთნელი",
