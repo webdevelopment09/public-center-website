@@ -3175,7 +3175,93 @@ body {
     padding: 26px;
   }
 
-  .service-group-call-btn {
-    width: 100%;
+  /* PREMIUM SERVICE GROUP ACTION BUTTONS */
+
+.service-group-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.service-group-call-btn,
+.service-group-register-btn {
+  min-height: 72px;
+  padding: 16px 20px;
+  border-radius: 22px;
+  color: white;
+  font-weight: 950;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.service-group-call-btn {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.24), transparent 34%),
+    linear-gradient(135deg, #d62828, #a4161a);
+  box-shadow: 0 18px 42px rgba(214, 40, 40, 0.24);
+}
+
+.service-group-register-btn {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.24), transparent 34%),
+    linear-gradient(135deg, #005caf, #003f7d);
+  box-shadow: 0 18px 42px rgba(0, 92, 175, 0.24);
+}
+
+.service-group-call-btn::after,
+.service-group-register-btn::after {
+  content: "→";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+
+.service-group-call-btn:hover,
+.service-group-register-btn:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.05);
+}
+
+.service-group-call-btn:hover::after,
+.service-group-register-btn:hover::after {
+  right: 16px;
+}
+
+.service-group-call-btn span,
+.service-group-register-btn span {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.service-group-call-btn small,
+.service-group-register-btn small {
+  font-size: 13px;
+  opacity: 0.78;
+  font-weight: 800;
+  padding-right: 28px;
+}
+
+@media (max-width: 650px) {
+  .service-group-actions {
+    grid-template-columns: 1fr;
   }
+
+  .service-group-call-btn,
+  .service-group-register-btn {
+    width: 100%;
+    min-height: 68px;
+  }
+}
+
 }
