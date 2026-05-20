@@ -4,6 +4,7 @@ import { branches, services } from "@/data/services";
 import PageTransition from "@/components/PageTransition";
 import ServiceSubscriptionsPreview from "@/components/ServiceSubscriptionsPreview";
 import ServiceInstructors from "@/components/ServiceInstructors";
+import ServiceGroupsSection from "@/components/ServiceGroupsSection";
 
 export function generateStaticParams() {
   const params = [];
@@ -66,6 +67,8 @@ export default async function ServiceBranchPage({ params }) {
         </div>
 
          <ServiceSubscriptionsPreview serviceSlug={service.slug} />
+
+         <ServiceGroupsSection serviceSlug={service.slug} branchSlug={branch.slug} />
 
          <ServiceInstructors serviceSlug={service.slug} branchSlug={branch.slug} />
 
