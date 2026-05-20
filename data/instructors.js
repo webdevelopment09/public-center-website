@@ -80,7 +80,7 @@ export const instructors = [
  },
 
  {
-  serviceSlug: "fitness",
+  serviceSlug: "gym",
   branches: ["didi-dighomi"],
 
   name: "ბადრი კაკაპაძე",
@@ -100,7 +100,7 @@ export const instructors = [
 },
 
 {
-  serviceSlug: "fitness",
+  serviceSlug: "gym",
   branches: ["didi-dighomi"],
 
   name: "ვახტანგ აზარაშვილი",
@@ -120,7 +120,7 @@ export const instructors = [
 },
 
 {
-  serviceSlug: "fitness",
+  serviceSlug: "gym",
   branches: ["didi-dighomi"],
 
   name: "გოგა ინასარიძე",
@@ -140,7 +140,7 @@ export const instructors = [
 },
 
 {
-  serviceSlug: "fitness",
+  serviceSlug: "gym",
   branches: ["didi-dighomi"],
 
   name: "ნიკა ხანჩილავა",
@@ -160,7 +160,7 @@ export const instructors = [
 },
 
 {
-  serviceSlug: "fitness",
+  serviceSlug: "gym",
   branches: ["didi-dighomi"],
 
   name: "ვიკა თოხაძე",
@@ -180,7 +180,7 @@ export const instructors = [
 },
 
 {
-  serviceSlug: "fitness",
+  serviceSlug: "gym",
   branches: ["mtawminda"],
 
   name: "ავთანდილი",
