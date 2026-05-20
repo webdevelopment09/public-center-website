@@ -54,23 +54,11 @@ export default function ServiceGroupsSection({ serviceSlug, branchSlug }) {
                 ))}
               </ul>
 
-              <div className="service-group-actions">
+              <div className="service-group-actions single-action">
   <a href={`tel:${group.phone}`} className="service-group-call-btn">
     <span>დარეკვა</span>
     <small>{group.phone}</small>
   </a>
-
-  {group.registrationLink && (
-    <a
-      href={group.registrationLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="service-group-register-btn"
-    >
-      <span>რეგისტრაცია</span>
-      <small>Facebook გვერდზე გადასვლა</small>
-    </a>
-  )}
 </div>
             </div>
           </article>

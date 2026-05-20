@@ -3263,5 +3263,13 @@ body {
     min-height: 68px;
   }
 }
+}
 
+.service-group-actions.single-action {
+  grid-template-columns: 1fr;
+  max-width: 360px;
+}
+
+.service-group-actions.single-action .service-group-call-btn {
+  width: 100%;
 }
