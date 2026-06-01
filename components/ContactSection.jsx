@@ -101,7 +101,7 @@ export default function ContactSection() {
             <div className="contact-info-list">
               <div>
                 <strong>ტელეფონი</strong>
-                <a href="tel:+995555123456">+995 555 12 34 56</a>
+                <a href="tel:+995555123456">+995 032 200 80 11</a>
               </div>
 
               <div>
@@ -113,7 +113,9 @@ export default function ContactSection() {
 
               <div>
                 <strong>სამუშაო დრო</strong>
-                <span>ორშ - კვი: 08:00 - 23:00</span>
+                <span>ორშ - შაბ: 07:00 - 23:00 
+                  კვირა: 09:00 - 21:00
+                </span>
               </div>
             </div>
           </div>
