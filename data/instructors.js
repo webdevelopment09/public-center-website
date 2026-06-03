@@ -290,7 +290,7 @@ export const instructors = [
 
   name: "ლიზა ომიაძე",
   role: "სპორტული აკრობატიკის მწვრთნელი",
-  image: "/images/instructors/Liza_Omiadze1.jpg",
+  image: "/images/instructors/Liza_Omiadze2.jpg",
 
   experience: "გამოცდილება მალე დაემატება",
   description:
