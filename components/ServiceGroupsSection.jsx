@@ -34,19 +34,27 @@ export default function ServiceGroupsSection({ serviceSlug, branchSlug }) {
 
               <p>{group.description}</p>
 
-              <div className="service-group-coaches">
-                <strong>მწვრთნელები</strong>
+              {group.coaches?.length > 0 && (
+  <div className="service-group-coaches">
+    <strong>მწვრთნელები</strong>
 
-                <div>
-                  {group.coaches.map((coach) => (
-                    <span key={coach}>{coach}</span>
-                  ))}
-                </div>
-              </div>
+    <div>
+      {group.coaches.map((coach) => (
+        <span key={coach}>{coach}</span>
+      ))}
+    </div>
+  </div>
+)}
 
               <div className="service-group-qualification">
                 {group.qualification}
               </div>
+              {group.schedule && (
+              <div className="service-group-schedule">
+              <strong>განრიგი</strong>
+              <span>{group.schedule}</span>
+              </div>
+              )}
 
               <ul className="service-group-benefits">
                 {group.benefits.map((benefit) => (
@@ -54,11 +62,27 @@ export default function ServiceGroupsSection({ serviceSlug, branchSlug }) {
                 ))}
               </ul>
 
-              <div className="service-group-actions single-action">
-  <a href={`tel:${group.phone}`} className="service-group-call-btn">
-    <span>დარეკვა</span>
-    <small>{group.phone}</small>
-  </a>
+              <div className="service-group-actions">
+  {group.phone && (
+    <a href={`tel:${group.phone}`} className="service-group-call-btn">
+      <span>დარეკვა</span>
+      <small>{group.phone}</small>
+    </a>
+  )}
+
+  {group.extraPhones?.map((phone) => (
+    <a href={`tel:${phone}`} className="service-group-call-btn" key={phone}>
+      <span>დარეკვა</span>
+      <small>{phone}</small>
+    </a>
+  ))}
+
+  {group.email && (
+    <a href={`mailto:${group.email}`} className="service-group-email-btn">
+      <span>Email</span>
+      <small>{group.email}</small>
+    </a>
+  )}
 </div>
             </div>
           </article>
