@@ -55,11 +55,7 @@ export default async function ServiceBranchPage({ params }) {
           <h2>
             {service.title} at {branch.name}
           </h2>
-          <p>
-            This page is prepared for your future content. You can add real
-            descriptions, schedules, trainers, prices, rules, and more details
-            about this service in this specific branch.
-          </p>
+          <p>{service.fullDescription}</p>
 
           <a href={`tel:${branch.phone}`} className="primary-btn">
             Call {branch.name}
