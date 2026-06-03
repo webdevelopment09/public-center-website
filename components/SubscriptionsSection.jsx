@@ -18,6 +18,31 @@ export default function SubscriptionsSection() {
         </span>
       </div>
 
+      <div className="senior-program-card">
+  <div className="senior-program-icon">60+</div>
+
+  <div className="senior-program-content">
+    <p>სპეციალური პროგრამა</p>
+
+    <h3>60+ პროგრამა</h3>
+
+    <span>
+      60+ პროგრამის ფარგლებში ბენეფიციარებს შეუძლიათ საზოგადოებრივი ცენტრის
+      სერვისებით უფასოდ სარგებლობა.
+    </span>
+
+    <div className="senior-documents">
+      <strong>საჭირო დოკუმენტები:</strong>
+
+      <ul>
+        <li>ჯანმრთელობის ცნობა — ფორმა 100</li>
+        <li>საჯარო რეესტრიდან რეგისტრაციის ცნობა საცხოვრებელი ადგილის შესახებ</li>
+        <li>პირადობის დამადასტურებელი მოწმობის ასლი</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
       <div className="subscriptions-grid">
         {subscriptionGroups.map((group) => (
           <article className="subscription-card" key={group.id}>
