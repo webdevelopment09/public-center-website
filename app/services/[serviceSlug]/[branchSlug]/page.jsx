@@ -59,7 +59,7 @@ export default async function ServiceBranchPage({ params }) {
           <p>{service.fullDescription}</p>
 
           <a href={`tel:${branch.phone}`} className="primary-btn">
-            Call {branch.name}
+            დარეკვა 
           </a>
         </div>
 
