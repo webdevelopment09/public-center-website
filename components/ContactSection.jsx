@@ -125,7 +125,6 @@ export default function ContactSection() {
               <div className="contact-branch-card" key={branch.slug}>
                 <h4>{branch.name}</h4>
                 <p>{branch.location}</p>
-                <a href={`tel:${branch.phone}`}>{branch.phone}</a>
               </div>
             ))}
           </div>

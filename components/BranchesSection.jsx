@@ -66,10 +66,7 @@ export default function BranchesSection() {
                     <span>{branch.hours}</span>
                   </div>
 
-                  <div>
-                    <strong>ტელეფონი</strong>
-                    <span>{branch.phone}</span>
-                  </div>
+                  
                 </div>
 
                 <a href={`tel:${branch.phone}`} className="branch-call-btn">
