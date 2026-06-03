@@ -3340,3 +3340,12 @@ body {
   font-weight: 800;
   padding-right: 28px;
 }
+
+.branch-details span {
+  white-space: pre-line;
+}
+
+.contact-branch-card p,
+.contact-info-list span {
+  white-space: pre-line;
+}
