@@ -69,7 +69,7 @@ export default function BranchesSection() {
                   
                 </div>
 
-                <a href="tel:+995555123456" className="branch-call-btn">
+                <a href="tel:+9950322008011" className="branch-call-btn">
                 დარეკვა
                 </a>
               </div>
