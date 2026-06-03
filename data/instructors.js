@@ -268,7 +268,7 @@ export const instructors = [
   serviceSlug: "gymnastics",
   branches: ["didi-dighomi"],
 
-  name: "თამარ ვიკლაური",
+  name: "თამარ წიკლაური",
   role: "სპორტული აკრობატიკის მწვრთნელი",
   image: "/images/instructors/Tamar_Wiklauri.jpg",
 
@@ -290,7 +290,7 @@ export const instructors = [
 
   name: "ლიზა ომიაძე",
   role: "სპორტული აკრობატიკის მწვრთნელი",
-  image: "/images/instructors/Liza_Omiadze.jpg",
+  image: "/images/instructors/Liza_Omiadze1.jpg",
 
   experience: "გამოცდილება მალე დაემატება",
   description:
