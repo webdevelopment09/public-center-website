@@ -3349,3 +3349,11 @@ body {
 .contact-info-list span {
   white-space: pre-line;
 }
+
+/* CONTACT LINE BREAK FIX */
+
+.contact-info-list span,
+.contact-branch-card p,
+.contact-branch-card span {
+  white-space: pre-line;
+}
