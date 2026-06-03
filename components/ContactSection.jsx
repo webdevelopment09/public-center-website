@@ -114,7 +114,7 @@ export default function ContactSection() {
               <div>
                 <strong>სამუშაო დრო</strong>
                 <span>ორშ - შაბ: 07:00 - 23:00 
-                  კვირა: 09:00 - 21:00
+                     კვირა: 09:00 - 21:00
                 </span>
               </div>
             </div>
