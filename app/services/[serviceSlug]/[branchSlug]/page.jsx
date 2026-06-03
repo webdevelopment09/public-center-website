@@ -45,16 +45,17 @@ export default async function ServiceBranchPage({ params }) {
         <div className="detail-hero-content">
           <p>{branch.name}</p>
           <h1>{service.title}</h1>
-          <span>Professional facilities for a healthier lifestyle.</span>
+          <span></span>
         </div>
       </section>
 
       <section className="detail-content">
         <div className="detail-text">
-          <p className="small-title">About this service</p>
+          <p className="small-title">სერვისის შესახებ</p>
           <h2>
-            {service.title} at {branch.name}
+          {service.title} — {branch.name}
           </h2>
+
           <p>{service.fullDescription}</p>
 
           <a href={`tel:${branch.phone}`} className="primary-btn">
