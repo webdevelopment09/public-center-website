@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import StatsSection from "@/components/StatsSection";
 import SubscriptionsSection from "@/components/SubscriptionsSection";
+import FAQSection from "@/components/FAQSection";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <ServicesGrid />
         <BranchesSection />
         <SubscriptionsSection />
+        <FAQSection />
         <ContactSection />
         <Footer />
       </main>
