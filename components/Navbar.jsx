@@ -24,7 +24,7 @@ export default function Navbar() {
           <Link href="/#contact">კონტაქტი</Link>
         </nav>
 
-        <a href="tel:+995555123456" className="nav-cta desktop-call">
+        <a href="tel:+9950322008011" className="nav-cta desktop-call">
           დაგვირეკეთ
         </a>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
         <Link href="/#subscriptions" onClick={closeMenu}>აბონიმენტები</Link>
         <Link href="/#contact" onClick={closeMenu}>კონტაქტი</Link>
 
-        <a href="tel:+995555123456" className="mobile-call" onClick={closeMenu}>
+        <a href="tel:+9950322008011" className="mobile-call" onClick={closeMenu}>
           დაგვირეკეთ
         </a>
       </div>

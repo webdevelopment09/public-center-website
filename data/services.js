@@ -2,7 +2,7 @@ export const branches = [
   {
     name: "მთაწმინდის ცენტრი",
     slug: "mtawminda",
-    phone: "+995 555 12 34 56",
+    phone: "+995 032 200 80 11",
     image: "/images/mtawminda.jpg",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.450464883356!2d44.79565637647001!3d41.68921027126315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d005d8f9a5b%3A0xbc84774ba851fd6d!2z4YOb4YOg4YOQ4YOV4YOQ4YOa4YOk4YOj4YOc4YOl4YOq4YOY4YOj4YOg4YOYIOGDoeGDnuGDneGDoOGDouGDo-GDmuGDmCDhg6rhg5Thg5zhg6Lhg6Dhg5g!5e0!3m2!1ska!2sge!4v1777757246830!5m2!1ska!2sge",
 
@@ -16,7 +16,7 @@ export const branches = [
   {
     name: "ვარკეთილის ცენტრი",
     slug: "varketili",
-    phone: "+995 555 22 33 44",
+    phone: "+995 032 200 80 11",
     image: "/images/varketili-branch.jpg",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.633179537179!2d44.8810655!3d41.7068539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440d001aa1274b%3A0xc127f9147e986143!2z4YOV4YOQ4YOV4YOQ4YOa4YOk4YOj4YOc4YOl4YOq4YOY4YOj4YOg4YOYIOGDoeGDnuGDneGDoOGDouGDo-GDmuGDmCDhg6rhg5Thg5zhg6Lhg6Dhg5g!5e0!3m2!1ska!2sge!4v1777757299613!5m2!1ska!2sge",
 
@@ -30,7 +30,7 @@ export const branches = [
   {
     name: "დიდი დიღმის ცენტრი",
     slug: "didi-dighomi",
-    phone: "+995 555 77 88 99",
+    phone: "+995 032 200 80 11",
     image: "/images/outside.jpg",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.5649771888293!2d44.75759539999999!3d41.7945881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446fcfd6a29d11%3A0x108124637fd7cadd!2z4YOb4YOg4YOQ4YOV4YOQ4YOa4YOk4YOj4YOc4YOl4YOq4YOY4YOj4YOg4YOYIOGDoeGDkOGDliDhg6rhg5Thg5zhg6Lhg6Dhg5g!5e0!3m2!1ska!2sge!4v1777757338851!5m2!1ska!2sge",
 

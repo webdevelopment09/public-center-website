@@ -84,7 +84,7 @@ export default async function ServiceBranchPage({ params }) {
 </div>
 
         <Link href="/#services" className="back-link">
-          ← Back to Services
+          ← დაბრუნება 
         </Link>
       </section>
         </main>
