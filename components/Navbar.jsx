@@ -2,10 +2,32 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+
+  const router = useRouter();
+const pathname = usePathname();
+
+const handleHomeClick = (e) => {
+  e.preventDefault();
+
+  setMenuOpen(false);
+
+  if (pathname === "/") {
+    window.history.replaceState(null, "", "/");
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  } else {
+    router.push("/");
+  }
+};
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -17,7 +39,9 @@ export default function Navbar() {
         </Link>
 
         <nav className="nav-links">
-          <Link href="/">საწყისი</Link>
+          <Link href="/" onClick={handleHomeClick}>
+          საწყისი
+         </Link>
           <Link href="/#services">სერვისები</Link>
           <Link href="/#branches">ფილიალები</Link>
           <Link href="/#subscriptions">აბონიმენტები</Link>
@@ -53,3 +77,4 @@ export default function Navbar() {
     </>
   );
 }
+
