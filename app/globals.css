@@ -3656,3 +3656,32 @@ body {
     line-height: 1.18 !important;
   }
 }
+
+/* CLIENT FEEDBACK — SMALLER BRANCH + CONTACT TITLES */
+
+/* Branch card titles:
+   მთაწმინდის ცენტრი / ვარკეთილის ცენტრი / დიდი დიღმის ცენტრი */
+.branch-info h3,
+.branch-card h3 {
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+}
+
+/* Contact section title:
+   მთავარი საკონტაქტო */
+.contact-info-card h3,
+.contact-card h3,
+.contact-main-card h3 {
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+}
+
+@media (max-width: 768px) {
+  .branch-info h3,
+  .branch-card h3,
+  .contact-info-card h3,
+  .contact-card h3,
+  .contact-main-card h3 {
+    font-size: 21px !important;
+  }
+}
