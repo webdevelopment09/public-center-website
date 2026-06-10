@@ -3616,7 +3616,7 @@ body {
 /* CLIENT FEEDBACK — SMALLER MAIN HEADINGS */
 
 .hero h1 {
-  font-size: clamp(38px, 7vw, 72px) !important;
+  font-size: clamp(44px, 7vw, 80px) !important;
   line-height: 1.14 !important;
   letter-spacing: -1px !important;
 }
